@@ -1,11 +1,12 @@
 // myscript.js
 
 var oracledb = require('oracledb-pb');
-
+var userName = '';
+var passWord = '';
 oracledb.getConnection(
   {
-    user          : "pgourdet",
-    password      : "!Inf1n1ty9",
+    user          : userName,
+    password      : passWord,
     connectString : "oracle.cise.ufl.edu:1521/orcl/"
 
   },
@@ -25,10 +26,11 @@ oracledb.getConnection(
           doRelease(connection);
           return;
         }
-		console.log('SUCCESS');
-		console.log(result.metaData);
-        console.log(result.rows);
-   // fetchOneRowFromRS(connection, result.resultSet);
+        //The commented out is a basic way recomended is bu use of the getRow or getRows function call below
+    // console.log('SUCCESS');
+    // console.log(result.metaData);
+      //console.log(result.rows);
+      fetchOneRowFromRS(connection, result.resultSet);
 
         doRelease(connection);
       });
@@ -40,7 +42,8 @@ function fetchOneRowFromRS(connection, resultSet)
     function (err, row)
     {
       if (err) {
-        console.log(err);          // close the Result Set and release the connection
+        console.log(err); 
+       // close the Result Set and release the connection
        // close the Result Set and release the connection
       } else {
         console.log(row);
