@@ -1,0 +1,32 @@
+{
+  "name": "cis4301",
+  "version": "1.0.0",
+  "description": "cis4301 kickstarter evaluation app usning angular 5 nodejs oracledb express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patrick-Gourdet/cis4301databases.git"
+  },
+  "keywords": [
+    "Kickstarter",
+    "statistics",
+    "nodejs",
+    "patrick",
+    "gourdet"
+  ],
+  "author": "Patrick Gourdet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Patrick-Gourdet/cis4301databases/issues"
+  },
+  "homepage": "https://github.com/Patrick-Gourdet/cis4301databases#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "oracledb": "github:oracle/node-oracledb#v2.0.15",
+    "route": "^0.2.5"
+  }
+}
