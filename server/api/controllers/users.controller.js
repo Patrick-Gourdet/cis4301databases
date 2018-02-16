@@ -48,3 +48,12 @@ oracledb.getConnection(connectionInfo,
 
 
 }
+module.exports.usersGetOne =function(req,res){
+"use strict"
+oracledb.getConnection(connectionInfo,
+  function(err, connection)
+  {
+
+
+    })
+};
