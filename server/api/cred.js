@@ -1,7 +1,7 @@
-var userName = "pgourdet";
-var passWord = "!Inf1n1ty9";
+var userName = "";
+var passWord = "";
 connectionInfo =   {userName,
-     password      : password,
+     password      : passWord,
      connectString : "oracle.cise.ufl.edu:1521/orcl/"
 
   };

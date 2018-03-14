@@ -1,7 +1,7 @@
 var express = require('express');
-var router = express.router();
+var router = express.Router();
 
-var userCtrl = require('../controllers/user.controller.js');
+var userCtrl = require('../controllers/users.controller.js');
 
 router
 .route('/profiles')
