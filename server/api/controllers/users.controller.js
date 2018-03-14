@@ -5,7 +5,7 @@
 
 connectionInfo = require('../cred');
 
-
+//GET ALL LISTED USERS 
 module.exports.usersGetAll =function(req,res){
 "use strict"
 oracledb.getConnection(connectionInfo,
@@ -49,6 +49,37 @@ oracledb.getConnection(connectionInfo,
 
 }
 module.exports.usersGetOne =function(req,res){
+"use strict"
+oracledb.getConnection(connectionInfo,
+  function(err, connection)
+  {
+    if(err){
+
+    }
+
+    })
+};
+
+module.exports.userDelete =function(req,res){
+"use strict"
+oracledb.getConnection(connectionInfo,
+  function(err, connection)
+  {
+
+
+    })
+};
+
+module.exports.userEdit =function(req,res){
+"use strict"
+oracledb.getConnection(connectionInfo,
+  function(err, connection)
+  {
+
+
+    })
+};
+module.exports.userRegister =function(req,res){
 "use strict"
 oracledb.getConnection(connectionInfo,
   function(err, connection)

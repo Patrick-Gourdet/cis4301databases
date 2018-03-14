@@ -7,4 +7,8 @@ router
 .route('/profiles')
 .get(userCtrl.usersGetAll);
 
+router
+.route('/profiles/:USER_NAME')
+.get(userCtrl.usersGetOne);
+
 module.exports = router;
